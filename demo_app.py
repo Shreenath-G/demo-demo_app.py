@@ -544,7 +544,8 @@ st.markdown("---")
 st.markdown("""
 <div style='text-align: center; color: #666;'>
     <p><strong>KalyanAdStudio</strong> - AI-Powered Advertising Optimization</p>
-    <p>📧 saleso@kalyankart.com | 🌐 kalyankart.com | 📱 Schedule a demo</p>
+    <p>📧 sales@kalyankart.com | 🌐 kalyankart.com | 📱 Schedule a demo</p>
     <p style='font-size: 0.8rem;'>This is a demonstration. Actual results may vary.</p>
 </div>
 """, unsafe_allow_html=True)
+
