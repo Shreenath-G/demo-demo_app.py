@@ -276,7 +276,7 @@ if demo_mode == "🎬 Interactive Demo":
                 name='After AI',
                 line=dict(color='#2ca02c', width=2)
             ))
-            fig.add_vline(x=dates[14], line_dash="dash", line_color="gray", annotation_text="AI Activated")
+            fig.add_vline(x=dates[14].strftime('%Y-%m-%d'), line_dash="dash", line_color="gray", annotation_text="AI Activated")
             fig.update_layout(
                 title="ROAS Over Time",
                 xaxis_title="Date",
@@ -504,7 +504,7 @@ elif demo_mode == "📈 Results Comparison":
         line=dict(color='#2ca02c', width=2),
         fill='tozeroy'
     ))
-    fig.add_vline(x=dates[29], line_dash="dash", line_color="gray", annotation_text="AI Activated")
+    fig.add_vline(x=dates[29].strftime('%Y-%m-%d'), line_dash="dash", line_color="gray", annotation_text="AI Activated")
     fig.update_layout(
         title="ROAS Improvement Over Time",
         xaxis_title="Date",
