@@ -91,8 +91,8 @@ with st.sidebar:
     
     st.markdown("---")
     st.markdown("### Contact")
-    st.markdown("📧 demo@kalyanaadstudio.com")
-    st.markdown("🌐 kalyanaadstudio.com")
+    st.markdown("📧 sales@kalyankart.com")
+    st.markdown("🌐 kalyankart.com")
 
 # Main content
 if demo_mode == "🎬 Interactive Demo":
@@ -276,7 +276,20 @@ if demo_mode == "🎬 Interactive Demo":
                 name='After AI',
                 line=dict(color='#2ca02c', width=2)
             ))
-            fig.add_vline(x=dates[14].strftime('%Y-%m-%d'), line_dash="dash", line_color="gray", annotation_text="AI Activated")
+            fig.add_shape(
+                type="line",
+                x0=dates[14], x1=dates[14],
+                y0=0, y1=1,
+                yref="paper",
+                line=dict(color="gray", width=2, dash="dash")
+            )
+            fig.add_annotation(
+                x=dates[14], y=1,
+                yref="paper",
+                text="AI Activated",
+                showarrow=False,
+                yshift=10
+            )
             fig.update_layout(
                 title="ROAS Over Time",
                 xaxis_title="Date",
@@ -504,7 +517,20 @@ elif demo_mode == "📈 Results Comparison":
         line=dict(color='#2ca02c', width=2),
         fill='tozeroy'
     ))
-    fig.add_vline(x=dates[29].strftime('%Y-%m-%d'), line_dash="dash", line_color="gray", annotation_text="AI Activated")
+    fig.add_shape(
+        type="line",
+        x0=dates[29], x1=dates[29],
+        y0=0, y1=1,
+        yref="paper",
+        line=dict(color="gray", width=2, dash="dash")
+    )
+    fig.add_annotation(
+        x=dates[29], y=1,
+        yref="paper",
+        text="AI Activated",
+        showarrow=False,
+        yshift=10
+    )
     fig.update_layout(
         title="ROAS Improvement Over Time",
         xaxis_title="Date",
@@ -518,7 +544,7 @@ st.markdown("---")
 st.markdown("""
 <div style='text-align: center; color: #666;'>
     <p><strong>KalyanAdStudio</strong> - AI-Powered Advertising Optimization</p>
-    <p>📧 demo@kalyanaadstudio.com | 🌐 kalyanaadstudio.com | 📱 Schedule a demo</p>
+    <p>📧 saleso@kalyankart.com | 🌐 kalyankart.com | 📱 Schedule a demo</p>
     <p style='font-size: 0.8rem;'>This is a demonstration. Actual results may vary.</p>
 </div>
 """, unsafe_allow_html=True)
